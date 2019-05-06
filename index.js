@@ -33,4 +33,9 @@ app.use("/api/members", require("./routes/api/members"));
 
 const PORT = process.env.PORT || 5000;
 
+// if (!module.parent) {
+//   app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+// }
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+
+module.exports = app;
